@@ -1,0 +1,252 @@
+{
+"api_errors": [
+{
+"code": 200,
+"name": "OK",
+"description": "The request completed successfully.",
+"common_causes": [
+"Request processed successfully",
+"Valid payload",
+"Successful authentication"
+],
+"troubleshooting": [
+"No action required"
+]
+},
+{
+"code": 201,
+"name": "Created",
+"description": "The request completed successfully and a new resource was created.",
+"common_causes": [
+"Successful POST request",
+"Resource creation operation"
+],
+"troubleshooting": [
+"Verify the created resource"
+]
+},
+{
+"code": 202,
+"name": "Accepted",
+"description": "The request has been accepted for processing but is not yet complete.",
+"common_causes": [
+"Asynchronous processing",
+"Queued job"
+],
+"troubleshooting": [
+"Monitor job status",
+"Check callback or webhook results"
+]
+},
+{
+"code": 400,
+"name": "Bad Request",
+"description": "The server could not understand the request.",
+"common_causes": [
+"Invalid JSON",
+"Missing required parameters",
+"Incorrect data format"
+],
+"troubleshooting": [
+"Validate request body",
+"Verify required fields",
+"Review API documentation"
+]
+},
+{
+"code": 401,
+"name": "Unauthorized",
+"description": "Authentication credentials are missing or invalid.",
+"common_causes": [
+"Invalid API key",
+"Expired token",
+"Missing Authorization header"
+],
+"troubleshooting": [
+"Verify credentials",
+"Refresh access token",
+"Check Authorization header"
+]
+},
+{
+"code": 403,
+"name": "Forbidden",
+"description": "The server understood the request but refuses to authorize it.",
+"common_causes": [
+"Insufficient permissions",
+"Blocked IP address",
+"Access policy restrictions"
+],
+"troubleshooting": [
+"Review user permissions",
+"Check access policies",
+"Contact API administrator"
+]
+},
+{
+"code": 404,
+"name": "Not Found",
+"description": "The requested resource could not be found.",
+"common_causes": [
+"Incorrect URL",
+"Deleted resource",
+"Typographical error in endpoint"
+],
+"troubleshooting": [
+"Verify endpoint URL",
+"Check resource ID",
+"Review API documentation"
+]
+},
+{
+"code": 408,
+"name": "Request Timeout",
+"description": "The server timed out waiting for the request.",
+"common_causes": [
+"Network latency",
+"Slow connection",
+"Large payload"
+],
+"troubleshooting": [
+"Retry request",
+"Check network connectivity",
+"Reduce payload size"
+]
+},
+{
+"code": 409,
+"name": "Conflict",
+"description": "The request conflicts with the current state of the resource.",
+"common_causes": [
+"Duplicate record",
+"Version conflict",
+"Concurrent update"
+],
+"troubleshooting": [
+"Check resource state",
+"Retry with latest version",
+"Avoid duplicate submissions"
+]
+},
+{
+"code": 422,
+"name": "Unprocessable Entity",
+"description": "The request is valid but contains invalid data.",
+"common_causes": [
+"Validation errors",
+"Missing required values",
+"Invalid field format"
+],
+"troubleshooting": [
+"Validate payload",
+"Review schema requirements",
+"Check field formats"
+]
+},
+{
+"code": 429,
+"name": "Too Many Requests",
+"description": "Rate limit exceeded.",
+"common_causes": [
+"Excessive API requests",
+"Webhook retry storms",
+"Rate limiting policy"
+],
+"troubleshooting": [
+"Implement backoff strategy",
+"Reduce request frequency",
+"Review rate limits"
+]
+},
+{
+"code": 500,
+"name": "Internal Server Error",
+"description": "The server encountered an unexpected error.",
+"common_causes": [
+"Application exception",
+"Database failure",
+"Configuration issue"
+],
+"troubleshooting": [
+"Review server logs",
+"Check application health",
+"Contact provider if needed"
+]
+},
+{
+"code": 502,
+"name": "Bad Gateway",
+"description": "A gateway received an invalid response from an upstream server.",
+"common_causes": [
+"Upstream service failure",
+"Proxy issue",
+"Network problem"
+],
+"troubleshooting": [
+"Check upstream service",
+"Review proxy configuration",
+"Retry request"
+]
+},
+{
+"code": 503,
+"name": "Service Unavailable",
+"description": "The server is temporarily unavailable.",
+"common_causes": [
+"Maintenance window",
+"Server overload",
+"Resource exhaustion"
+],
+"troubleshooting": [
+"Retry later",
+"Check service status page",
+"Monitor server health"
+]
+},
+{
+"code": 504,
+"name": "Gateway Timeout",
+"description": "A gateway did not receive a timely response from an upstream server.",
+"common_causes": [
+"Slow upstream service",
+"Network latency",
+"Heavy server load"
+],
+"troubleshooting": [
+"Retry request",
+"Check upstream systems",
+"Review timeout settings"
+]
+},
+{
+"code": 507,
+"name": "Insufficient Storage",
+"description": "The server does not have enough storage to complete the request.",
+"common_causes": [
+"Disk full",
+"Large uploads",
+"Storage quota exceeded"
+],
+"troubleshooting": [
+"Free disk space",
+"Increase storage capacity",
+"Reduce upload size"
+]
+},
+{
+"code": 508,
+"name": "Loop Detected",
+"description": "The server detected an infinite processing loop.",
+"common_causes": [
+"Redirect loop",
+"Recursive API calls",
+"Routing configuration issue"
+],
+"troubleshooting": [
+"Review redirects",
+"Check application logic",
+"Inspect routing rules"
+]
+}
+]
+}
