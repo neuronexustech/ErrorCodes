@@ -1,0 +1,558 @@
+[
+  {
+    "code": "400",
+    "name": "Bad Request",
+    "description": "The request could not be understood due to malformed syntax.",
+    "troubleshooting": [
+      "Verify request formatting.",
+      "Check headers and URI syntax.",
+      "Validate message body content."
+    ]
+  },
+  {
+    "code": "401",
+    "name": "Unauthorized",
+    "description": "The request requires user authentication.",
+    "troubleshooting": [
+      "Verify credentials.",
+      "Check authentication configuration.",
+      "Confirm authorization policies."
+    ]
+  },
+  {
+    "code": "402",
+    "name": "Payment Required",
+    "description": "Reserved for future use.",
+    "troubleshooting": [
+      "Review vendor documentation.",
+      "Verify service licensing requirements."
+    ]
+  },
+  {
+    "code": "403",
+    "name": "Forbidden",
+    "description": "The server understood the request but refuses to fulfill it.",
+    "troubleshooting": [
+      "Verify user permissions.",
+      "Check access control lists.",
+      "Review security policies."
+    ]
+  },
+  {
+    "code": "404",
+    "name": "Not Found",
+    "description": "The requested user or resource was not found.",
+    "troubleshooting": [
+      "Verify destination address.",
+      "Check user registration status.",
+      "Confirm routing configuration."
+    ]
+  },
+  {
+    "code": "405",
+    "name": "Method Not Allowed",
+    "description": "The method specified is not allowed.",
+    "troubleshooting": [
+      "Verify SIP method support.",
+      "Review endpoint capabilities."
+    ]
+  },
+  {
+    "code": "406",
+    "name": "Not Acceptable",
+    "description": "The resource can only generate unacceptable content.",
+    "troubleshooting": [
+      "Check codec compatibility.",
+      "Verify Accept headers."
+    ]
+  },
+  {
+    "code": "407",
+    "name": "Proxy Authentication Required",
+    "description": "The request requires proxy authentication.",
+    "troubleshooting": [
+      "Verify proxy credentials.",
+      "Check proxy authentication settings."
+    ]
+  },
+  {
+    "code": "408",
+    "name": "Request Timeout",
+    "description": "The user could not be located in time.",
+    "troubleshooting": [
+      "Check network connectivity.",
+      "Verify endpoint registration.",
+      "Review firewall settings."
+    ]
+  },
+  {
+    "code": "409",
+    "name": "Conflict",
+    "description": "User already registered.",
+    "troubleshooting": [
+      "Verify registration status.",
+      "Remove duplicate registrations."
+    ]
+  },
+  {
+    "code": "410",
+    "name": "Gone",
+    "description": "The user existed previously but is no longer available.",
+    "troubleshooting": [
+      "Verify destination validity.",
+      "Update directory information."
+    ]
+  },
+  {
+    "code": "411",
+    "name": "Length Required",
+    "description": "The server requires a valid content length.",
+    "troubleshooting": [
+      "Include Content-Length header.",
+      "Validate message formatting."
+    ]
+  },
+  {
+    "code": "412",
+    "name": "Conditional Request Failed",
+    "description": "The specified precondition was not met.",
+    "troubleshooting": [
+      "Review conditional headers.",
+      "Verify request state."
+    ]
+  },
+  {
+    "code": "413",
+    "name": "Request Entity Too Large",
+    "description": "The request body exceeds server limits.",
+    "troubleshooting": [
+      "Reduce payload size.",
+      "Review server limits."
+    ]
+  },
+  {
+    "code": "414",
+    "name": "Request URI Too Long",
+    "description": "The URI exceeds server limitations.",
+    "troubleshooting": [
+      "Shorten URI length.",
+      "Review routing design."
+    ]
+  },
+  {
+    "code": "415",
+    "name": "Unsupported Media Type",
+    "description": "The request body format is unsupported.",
+    "troubleshooting": [
+      "Verify content type.",
+      "Check codec support."
+    ]
+  },
+  {
+    "code": "416",
+    "name": "Unsupported URI Scheme",
+    "description": "The URI scheme is not recognized.",
+    "troubleshooting": [
+      "Verify URI format.",
+      "Use a supported URI scheme."
+    ]
+  },
+  {
+    "code": "417",
+    "name": "Unknown Resource-Priority",
+    "description": "Unsupported Resource-Priority header encountered.",
+    "troubleshooting": [
+      "Review priority headers.",
+      "Check server feature support."
+    ]
+  },
+  {
+    "code": "420",
+    "name": "Bad Extension",
+    "description": "Unsupported SIP extension used.",
+    "troubleshooting": [
+      "Remove unsupported extensions.",
+      "Verify endpoint compatibility."
+    ]
+  },
+  {
+    "code": "421",
+    "name": "Extension Required",
+    "description": "A required SIP extension is missing.",
+    "troubleshooting": [
+      "Enable required SIP extensions.",
+      "Review Supported headers."
+    ]
+  },
+  {
+    "code": "422",
+    "name": "Session Interval Too Small",
+    "description": "Session expiration interval is below minimum.",
+    "troubleshooting": [
+      "Increase session interval.",
+      "Review Session-Expires header."
+    ]
+  },
+  {
+    "code": "423",
+    "name": "Interval Too Brief",
+    "description": "Resource expiration time is too short.",
+    "troubleshooting": [
+      "Increase expiration value.",
+      "Review registration timers."
+    ]
+  },
+  {
+    "code": "424",
+    "name": "Bad Location Information",
+    "description": "Location content is malformed or unsatisfactory.",
+    "troubleshooting": [
+      "Verify location data format.",
+      "Check location services configuration."
+    ]
+  },
+  {
+    "code": "428",
+    "name": "Use Identity Header",
+    "description": "An Identity header is required.",
+    "troubleshooting": [
+      "Add Identity header.",
+      "Review authentication requirements."
+    ]
+  },
+  {
+    "code": "429",
+    "name": "Provide Referrer Identity",
+    "description": "A valid Referred-By token was not provided.",
+    "troubleshooting": [
+      "Verify referral information.",
+      "Check Referred-By headers."
+    ]
+  },
+  {
+    "code": "430",
+    "name": "Flow Failed",
+    "description": "A specific user-agent flow failed.",
+    "troubleshooting": [
+      "Check network paths.",
+      "Review NAT and firewall configuration."
+    ]
+  },
+  {
+    "code": "433",
+    "name": "Anonymity Disallowed",
+    "description": "Anonymous requests are not permitted.",
+    "troubleshooting": [
+      "Disable anonymous calling.",
+      "Provide caller identity."
+    ]
+  },
+  {
+    "code": "436",
+    "name": "Bad Identity Info",
+    "description": "Identity-Info header could not be dereferenced.",
+    "troubleshooting": [
+      "Verify Identity-Info URI.",
+      "Check certificate availability."
+    ]
+  },
+  {
+    "code": "437",
+    "name": "Unsupported Certificate",
+    "description": "Certificate validation failed.",
+    "troubleshooting": [
+      "Verify certificate chain.",
+      "Check certificate trust settings."
+    ]
+  },
+  {
+    "code": "438",
+    "name": "Invalid Identity Header",
+    "description": "Identity header signature validation failed.",
+    "troubleshooting": [
+      "Verify signing certificates.",
+      "Check Identity header integrity."
+    ]
+  },
+  {
+    "code": "439",
+    "name": "First Hop Lacks Outbound Support",
+    "description": "Outbound support is unavailable on the first proxy hop.",
+    "troubleshooting": [
+      "Verify outbound support.",
+      "Review proxy capabilities."
+    ]
+  },
+  {
+    "code": "440",
+    "name": "Max-Breadth Exceeded",
+    "description": "Insufficient Max-Breadth value for parallel forking.",
+    "troubleshooting": [
+      "Increase Max-Breadth value.",
+      "Review routing policies."
+    ]
+  },
+  {
+    "code": "469",
+    "name": "Bad Info Package",
+    "description": "Unsupported INFO package received.",
+    "troubleshooting": [
+      "Verify Info Package support.",
+      "Check Recv-Info headers."
+    ]
+  },
+  {
+    "code": "470",
+    "name": "Consent Needed",
+    "description": "Recipient consent is required.",
+    "troubleshooting": [
+      "Obtain recipient consent.",
+      "Review privacy settings."
+    ]
+  },
+  {
+    "code": "480",
+    "name": "Temporarily Unavailable",
+    "description": "The callee is currently unavailable.",
+    "troubleshooting": [
+      "Verify endpoint registration.",
+      "Check device connectivity.",
+      "Try again later."
+    ]
+  },
+  {
+    "code": "481",
+    "name": "Call/Transaction Does Not Exist",
+    "description": "The request does not match an existing transaction.",
+    "troubleshooting": [
+      "Verify Call-ID.",
+      "Review dialog state."
+    ]
+  },
+  {
+    "code": "482",
+    "name": "Loop Detected",
+    "description": "A routing loop was detected.",
+    "troubleshooting": [
+      "Review routing tables.",
+      "Check SIP proxy configuration."
+    ]
+  },
+  {
+    "code": "483",
+    "name": "Too Many Hops",
+    "description": "Max-Forwards reached zero.",
+    "troubleshooting": [
+      "Increase Max-Forwards value.",
+      "Investigate routing loops."
+    ]
+  },
+  {
+    "code": "484",
+    "name": "Address Incomplete",
+    "description": "The Request-URI is incomplete.",
+    "troubleshooting": [
+      "Verify dialed number.",
+      "Check URI formatting."
+    ]
+  },
+  {
+    "code": "485",
+    "name": "Ambiguous",
+    "description": "The Request-URI is ambiguous.",
+    "troubleshooting": [
+      "Provide a more specific destination.",
+      "Review directory entries."
+    ]
+  },
+  {
+    "code": "486",
+    "name": "Busy Here",
+    "description": "The callee is busy.",
+    "troubleshooting": [
+      "Try again later.",
+      "Check call forwarding settings."
+    ]
+  },
+  {
+    "code": "487",
+    "name": "Request Terminated",
+    "description": "The request was terminated by CANCEL or BYE.",
+    "troubleshooting": [
+      "Review call logs.",
+      "Check cancellation events."
+    ]
+  },
+  {
+    "code": "488",
+    "name": "Not Acceptable Here",
+    "description": "Session description is unacceptable.",
+    "troubleshooting": [
+      "Verify codecs.",
+      "Review SDP negotiation."
+    ]
+  },
+  {
+    "code": "489",
+    "name": "Bad Event",
+    "description": "Unsupported event package specified.",
+    "troubleshooting": [
+      "Verify Event header.",
+      "Check feature support."
+    ]
+  },
+  {
+    "code": "491",
+    "name": "Request Pending",
+    "description": "A pending request already exists.",
+    "troubleshooting": [
+      "Wait and retry.",
+      "Review transaction state."
+    ]
+  },
+  {
+    "code": "493",
+    "name": "Undecipherable",
+    "description": "Encrypted content could not be decrypted.",
+    "troubleshooting": [
+      "Verify encryption keys.",
+      "Check certificate configuration."
+    ]
+  },
+  {
+    "code": "494",
+    "name": "Security Agreement Required",
+    "description": "A negotiated security mechanism is required.",
+    "troubleshooting": [
+      "Enable security negotiation.",
+      "Review TLS/IPSec configuration."
+    ]
+  },
+  {
+    "code": "500",
+    "name": "Server Internal Error",
+    "description": "Unexpected server condition prevented fulfillment.",
+    "troubleshooting": [
+      "Check server logs.",
+      "Restart affected services.",
+      "Review system resources."
+    ]
+  },
+  {
+    "code": "501",
+    "name": "Not Implemented",
+    "description": "The SIP method is not implemented.",
+    "troubleshooting": [
+      "Verify feature support.",
+      "Review vendor documentation."
+    ]
+  },
+  {
+    "code": "502",
+    "name": "Bad Gateway",
+    "description": "Invalid response received from downstream server.",
+    "troubleshooting": [
+      "Check upstream connectivity.",
+      "Review SIP trunk status."
+    ]
+  },
+  {
+    "code": "503",
+    "name": "Service Unavailable",
+    "description": "The server is overloaded or under maintenance.",
+    "troubleshooting": [
+      "Check server health.",
+      "Retry later.",
+      "Review capacity usage."
+    ]
+  },
+  {
+    "code": "504",
+    "name": "Server Time-out",
+    "description": "A downstream server did not respond in time.",
+    "troubleshooting": [
+      "Verify network connectivity.",
+      "Check downstream services."
+    ]
+  },
+  {
+    "code": "505",
+    "name": "Version Not Supported",
+    "description": "Unsupported SIP version.",
+    "troubleshooting": [
+      "Verify SIP version compatibility."
+    ]
+  },
+  {
+    "code": "513",
+    "name": "Message Too Large",
+    "description": "Message exceeds processing limits.",
+    "troubleshooting": [
+      "Reduce message size.",
+      "Review attachment handling."
+    ]
+  },
+  {
+    "code": "555",
+    "name": "Push Notification Service Not Supported",
+    "description": "The specified push notification service is unsupported.",
+    "troubleshooting": [
+      "Verify push notification provider.",
+      "Review vendor documentation."
+    ]
+  },
+  {
+    "code": "580",
+    "name": "Precondition Failure",
+    "description": "Specified session constraints cannot be met.",
+    "troubleshooting": [
+      "Review QoS requirements.",
+      "Verify endpoint capabilities."
+    ]
+  },
+  {
+    "code": "600",
+    "name": "Busy Everywhere",
+    "description": "All possible destinations are busy.",
+    "troubleshooting": [
+      "Try again later.",
+      "Review destination availability."
+    ]
+  },
+  {
+    "code": "603",
+    "name": "Decline",
+    "description": "The destination declined the call.",
+    "troubleshooting": [
+      "Verify destination availability.",
+      "Contact the recipient."
+    ]
+  },
+  {
+    "code": "604",
+    "name": "Does Not Exist Anywhere",
+    "description": "The requested user does not exist anywhere.",
+    "troubleshooting": [
+      "Verify destination address.",
+      "Check directory records."
+    ]
+  },
+  {
+    "code": "606",
+    "name": "Not Acceptable",
+    "description": "Session parameters are not acceptable.",
+    "troubleshooting": [
+      "Review codec compatibility.",
+      "Check SDP negotiation."
+    ]
+  },
+  {
+    "code": "607",
+    "name": "Unwanted",
+    "description": "The called party rejected the caller.",
+    "troubleshooting": [
+      "Verify caller reputation.",
+      "Review call-blocking policies."
+    ]
+  }
+]
